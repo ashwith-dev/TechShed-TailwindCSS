@@ -3,363 +3,387 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechShed</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <nav class="flex justify-between px-7 mt-3">
-        <h1 class="text-4xl font-semibold">TechShed</h1> 
-        <div class="flex gap-3">
-            <i class="fa-solid fa-magnifying-glass mt-1"></i>
-            <div class="flex items-centre gap-3">
-                <i class="fa-solid fa-circle-user mt-1"></i>
-                <h4>Log In</h4>
+    <nav class="flex justify-between items-center px-4 sm:px-7 mt-3">
+        <h1 class="text-2xl sm:text-4xl font-semibold">TechShed</h1>
+        <div class="flex gap-2 sm:gap-3 items-center">
+            <i class="fa-solid fa-magnifying-glass text-sm sm:text-base"></i>
+            <div class="flex items-center gap-1 sm:gap-3">
+                <i class="fa-solid fa-circle-user text-sm sm:text-base"></i>
+                <h4 class="hidden sm:block">Log In</h4>
             </div>
-            <div class="">
-                <i class="fa-regular fa-heart"></i>
+            <div>
+                <i class="fa-regular fa-heart text-sm sm:text-base"></i>
             </div>
-            <div class="flex">
-                <i class="fa-solid fa-cart-shopping mt-1"></i>
+            <div class="flex items-start">
+                <i class="fa-solid fa-cart-shopping text-sm sm:text-base"></i>
                 <h4 class="bg-black rounded-full text-[9px] text-white h-[13px] px-1">1</h4>
             </div>
         </div>
     </nav>
+
     <div class="bg-gray-300">
-        <div class="px-8 py-3">
-            <div class="flex gap-4 text-gray-800 text-sm">
-                    <a href="/html/index_main.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">shop All</a>
-                    <a href="/html/computers.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">computers</a>
+        <div class="px-4 sm:px-8 py-3 overflow-x-auto">
+            <div class="flex gap-3 sm:gap-4 text-gray-800 text-sm whitespace-nowrap">
+                <a href="/html/index_main.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Shop All</a>
+                <a href="/html/computers.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Computers</a>
+                <a href="/html/tablets.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Tablets</a>
+                <a href="/html/drones.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Drones & Cameras</a>
+                <a href="/html/audio.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Audio</a>
+                <a href="/html/mobile.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Mobile</a>
+                <a href="/html/tv.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">T.V & Home Cinema</a>
+                <a href="/html/wearable.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Wearable Tech</a>
+                <a href="/html/sale.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Sale</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex relative">
+        <div class="w-full">
+            <img class="h-64 sm:h-96 lg:h-[580px] w-full object-cover" src="/assets/bg-1-homepage.jpg">
+        </div>
+        <div class="absolute top-6 sm:top-12 lg:top-20 left-6 sm:left-16 lg:left-44 text-lg sm:text-2xl">
+            <div class="bg-red-500 w-28 sm:w-40 px-3 sm:px-5 text-white">
+                <h3 class="text-sm sm:text-base">Best Prices</h3>
+            </div>
+            <div class="font-semibold text-2xl sm:text-4xl lg:text-5xl w-64 sm:w-80 lg:w-96">
+                <h1 class="leading-[1.2]">Incredible Prices on All Your Favorite Items</h1>
+            </div>
+            <div class="text-sm sm:text-base mt-2">Get more for less on selected brands</div>
+            <button class="bg-purple-600 mt-3 sm:mt-0 px-4 sm:px-5 py-3 sm:py-5 rounded-full text-white w-28 sm:w-36 text-sm sm:text-base hover:bg-white hover:text-purple-700">Shop Now</button>
+        </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-10 p-4 sm:p-6 lg:p-10">
+        <div class="relative flex w-full sm:w-1/2">
+            <img class="h-56 sm:h-80 lg:h-[468px] w-full object-cover" src="/assets/iphone.jpg">
+            <div class="absolute text-white w-48 sm:w-64 lg:w-72 ml-6 sm:ml-10 lg:ml-16 mt-6 sm:mt-10 lg:mt-16">
+                <h3 class="text-base sm:text-lg lg:text-xl font-thin">Holiday Deals</h3>
+                <h1 class="text-3xl sm:text-4xl lg:text-6xl mt-2 sm:mt-3">Up to 30% off</h1>
+                <h3 class="text-base sm:text-lg lg:text-xl font-thin mt-2 sm:mt-3">Selected Smartphone Brands</h3>
+                <button class="bg-white font-thin rounded-3xl text-black w-24 sm:w-28 h-9 sm:h-10 mt-3 sm:mt-4 text-sm">Shop Now</button>
+            </div>
+        </div>
+        <div class="relative flex w-full sm:w-1/2">
+            <img class="h-56 sm:h-80 lg:h-[468px] w-full object-cover" src="/assets/headphone.jpg">
+            <div class="absolute text-white w-48 sm:w-64 lg:w-72 ml-6 sm:ml-10 lg:ml-16 mt-6 sm:mt-10 lg:mt-16">
+                <h3 class="text-base sm:text-lg lg:text-xl font-thin">Just In</h3>
+                <h1 class="text-3xl sm:text-4xl lg:text-6xl mt-2 sm:mt-3">Take Your Sound Anywhere</h1>
+                <h3 class="text-base sm:text-lg lg:text-xl font-thin mt-2 sm:mt-3">Top Headphone Brands</h3>
+                <button class="bg-white font-thin rounded-3xl text-black w-24 sm:w-28 h-9 sm:h-10 mt-3 sm:mt-4 text-sm">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white mx-4 sm:mx-10 py-8 sm:py-10 px-4 sm:px-8">
+        <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+            <i class="fa-solid fa-truck-pickup text-3xl sm:text-5xl"></i>
+            <h2 class="text-base sm:text-xl lg:text-2xl text-center sm:text-left">Curb-side pickup</h2>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+            <i class="fa-solid fa-box-archive text-3xl sm:text-5xl"></i>
+            <h2 class="text-base sm:text-xl lg:text-2xl text-center sm:text-left">Free shipping on orders over $50</h2>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+            <i class="fa-solid fa-money-bill-wave text-3xl sm:text-5xl"></i>
+            <h2 class="text-base sm:text-xl lg:text-2xl text-center sm:text-left">Low prices guaranteed</h2>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+            <i class="fa-regular fa-clock text-3xl sm:text-5xl"></i>
+            <h2 class="text-base sm:text-xl lg:text-2xl text-center sm:text-left">Available to you 24/7</h2>
+        </div>
+    </div>
+
+    <div class="bg-white mx-4 sm:mx-10 mt-8 sm:mt-10 px-4 sm:px-6 lg:px-10 flex flex-col items-center py-8 sm:py-10">
+        <h1 class="text-2xl sm:text-4xl font-semibold text-center mb-6 sm:mb-10">Best Sellers</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 w-full">
+            <div class="border border-black">
+                <div class="mt-3 ml-3">
+                    <h1 class="bg-red-600 rounded-full text-white w-14 h-6 flex items-center justify-center text-xs font-semibold">SALE</h1>
+                </div>
+                <img src="/assets/jp_gaming_laptop.jpg" class="w-full object-contain">
+                <div class="p-3">
+                    <h1 class="text-sm">JP Gaming Laptop 15.6" Laptop 256GB</h1>
+                    <h1 class="font-medium mt-1">$85.00</h1>
+                </div>
+            </div>
+            <div class="border border-black">
+                <div class="mt-3 ml-3">
+                    <h1 class="bg-red-600 rounded-full text-white w-14 h-6 flex items-center justify-center text-xs font-semibold">SALE</h1>
+                </div>
+                <img src="/assets/wireless_earbuds.jpg" class="w-full object-contain">
+                <div class="p-3">
+                    <h1 class="text-sm">In-ear Noise Cancelling & Isolating Wireless Earbuds</h1>
+                    <h1 class="font-medium mt-1">$70.00</h1>
+                </div>
+            </div>
+            <div class="border border-black">
+                <div class="mt-3 ml-3">
+                    <h1 class="bg-red-600 rounded-full text-white w-14 h-6 flex items-center justify-center text-xs font-semibold">SALE</h1>
+                </div>
+                <img src="/assets/tablet.jpg" class="w-full object-contain">
+                <div class="p-3">
+                    <h1 class="text-sm">JP - Space Tablet 10.4" Wi-Fi 32GB</h1>
+                    <h1 class="font-medium mt-1">$70.00</h1>
+                </div>
+            </div>
+            <div class="border border-black">
+                <div class="mt-3 ml-3">
+                    <h1 class="bg-red-600 rounded-full text-white w-14 h-6 flex items-center justify-center text-xs font-semibold">SALE</h1>
+                </div>
+                <img src="/assets/ocean_pro_11.jpg" class="w-full object-contain">
+                <div class="p-3">
+                    <h1 class="text-sm">Ocean Pro 11 - 12.3" Touch Screen</h1>
+                    <h1 class="font-medium mt-1">$70.00</h1>
+                </div>
+            </div>
+        </div>
+        <button class="bg-violet-600 rounded-full w-40 sm:w-44 h-10 text-white mt-6 sm:mt-8">VIEW ALL</button>
+    </div>
+
+    <div class="mx-4 sm:mx-10 bg-white py-8 sm:py-10">
+        <div class="text-center mb-8 sm:mb-14">
+            <h1 class="text-2xl sm:text-[32px] font-semibold">Shop by Category</h1>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 px-4 sm:px-10 lg:px-20 text-center">
+            <div>
+                <div class="bg-gray-200 w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_laptop.jpg" class="w-14 sm:w-20 lg:w-28 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">Computers</h1>
+            </div>
+            <div>
+                <div class="bg-gray-200 w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_mobile.jpg" class="w-12 sm:w-16 lg:w-24 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">Mobile</h1>
+            </div>
+            <div>
+                <div class="bg-gray-200 w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_drone.jpg" class="w-14 sm:w-20 lg:w-32 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">Drones & Cameras</h1>
+            </div>
+            <div>
+                <div class="bg-gradient-to-r from-violet-600 to-purple-600 w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_sale.jpg" class="w-10 sm:w-16 lg:w-20 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">Sale</h1>
+            </div>
+            <div>
+                <div class="bg-gray-200 w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_tablet.jpg" class="w-14 sm:w-20 lg:w-28 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">Tablets</h1>
+            </div>
+            <div>
+                <div class="bg-black w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_best.jpg" class="w-10 sm:w-16 lg:w-24 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">Best Sellers</h1>
+            </div>
+            <div>
+                <div class="bg-gray-200 w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_tv.jpg" class="w-14 sm:w-20 lg:w-32 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">T.V & Home Cinema</h1>
+            </div>
+            <div>
+                <div class="bg-gray-200 w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_watch.jpg" class="w-12 sm:w-16 lg:w-24 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">Wearable Tech</h1>
+            </div>
+            <div>
+                <div class="bg-gray-200 w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_speaker.jpg" class="w-12 sm:w-16 lg:w-24 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">Speakers</h1>
+            </div>
+            <div>
+                <div class="bg-gray-200 w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full flex items-center justify-center mx-auto">
+                    <img src="/assets/sbc_headphones.jpg" class="w-12 sm:w-16 lg:w-24 object-contain">
+                </div>
+                <h1 class="mt-3 text-sm sm:text-base lg:text-[18px] font-medium">Headphones</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative bg-white flex flex-col lg:flex-row overflow-hidden mx-4 sm:mx-10 my-8 sm:my-10 min-h-64 sm:min-h-80 lg:h-[600px]">
+        <div class="relative w-full lg:w-1/2 h-48 sm:h-72 lg:h-full overflow-hidden">
+            <img src="/assets/background_all_ele.avif" class="w-full h-full object-cover">
+            <div class="absolute top-6 right-6 sm:top-10 sm:left-[65%] w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 bg-red-600 rounded-full flex items-center justify-center shadow-lg z-20">
+                <p class="text-white text-sm sm:text-base lg:text-xl font-semibold rotate-[-15deg] text-center leading-tight">Best Price</p>
+            </div>
+        </div>
+        <div class="hidden lg:block absolute left-[45%] top-0 w-[400px] h-full bg-white -skew-x-12 z-10"></div>
+        <div class="relative w-full lg:w-1/2 h-auto flex flex-col justify-center px-6 sm:px-10 lg:pl-40 lg:pr-20 py-8 lg:py-0 z-20">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-800 mb-3 sm:mb-6">Save up to</h2>
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-3 sm:mb-6">$150</h1>
+            <div class="lg:w-[420px]">
+                <p class="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 leading-snug mb-3 sm:mb-4">on selected laptop & tablets brands</p>
+            </div>
+            <p class="text-gray-500 mb-6 sm:mb-10 text-sm sm:text-base">Terms and conditions apply</p>
+            <button class="w-36 sm:w-44 py-2 sm:py-3 rounded-full text-white text-base sm:text-lg font-medium bg-gradient-to-r from-purple-600 to-indigo-500 hover:scale-105 transition">Shop</button>
+        </div>
+    </div>
+
+    <div class="py-8 sm:py-10 bg-white mx-4 sm:mx-10 my-4 sm:my-10 flex flex-col items-center">
+        <h2 class="text-xl sm:text-2xl text-center mb-6 sm:mb-8">On Sale</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-6 w-full max-w-6xl mx-auto">
+            <div class="bg-white border p-4 sm:p-5 relative">
+                <p class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">SALE</p>
+                <img src="/assets/samrtwatchwithcahrger.avif" alt="" class="h-36 sm:h-40 w-full object-cover bg-gray-200 mb-3 sm:mb-4">
+                <p class="text-sm mb-2">Space Moon Smartwatch With Charger</p>
+                <p class="text-purple-600">$70.00</p>
+            </div>
+            <div class="bg-white border p-4 sm:p-5 relative">
+                <p class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">SALE</p>
+                <img src="/assets/ovesamrtphone.avif" alt="" class="h-36 sm:h-40 w-full object-cover bg-gray-200 mb-3 sm:mb-4">
+                <p class="text-sm mb-2">OVE Light Space 5G, 128GB</p>
+                <p class="text-purple-600">$70.00</p>
+            </div>
+            <div class="bg-white border p-4 sm:p-5 relative">
+                <p class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">SALE</p>
+                <img src="/assets/pilateslaptop.avif" alt="" class="h-36 sm:h-40 w-full object-cover bg-gray-200 mb-3 sm:mb-4">
+                <p class="text-sm mb-2">Pilates 16" Touch Screen Laptop 24GB Memory</p>
+                <p class="text-purple-600">$70.00</p>
+            </div>
+            <div class="bg-white border p-4 sm:p-5 relative">
+                <p class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">SALE</p>
+                <img src="/assets/turn5speaker.avif" alt="" class="h-36 sm:h-40 w-full object-cover bg-gray-200 mb-3 sm:mb-4">
+                <p class="text-sm mb-2">Turn5 Portable Bluetooth Speaker</p>
+                <p class="text-purple-600">$70.00</p>
+            </div>
+        </div>
+        <button class="bg-violet-600 rounded-full w-40 sm:w-44 h-10 text-white mt-5 sm:mt-6">VIEW ALL</button>
+    </div>
+
+    <section class="relative border-[24px] sm:border-[48px] border-gray-100 overflow-hidden">
+        <img src="/assets/drone.avif" class="w-full h-64 sm:h-96 lg:h-[600px] object-cover">
+        <div class="absolute inset-0 w-[55%] sm:w-[45%] lg:w-[40%] bg-white skew-x-[12deg] origin-bottom-left"></div>
+        <div class="absolute inset-0 z-10 flex flex-col justify-evenly my-6 sm:my-14 lg:my-[90px] pl-6 sm:pl-14 lg:pl-[100px]">
+            <p class="bg-red-600 w-fit text-white font-light px-2 text-xs sm:text-sm">Today's Special</p>
+            <h1 class="text-lg sm:text-2xl lg:text-3xl font-semibold">Best Arial View in Town</h1>
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold"><span class="text-[#6322FF]">30% </span>OFF</h1>
+            <p class="text-base sm:text-xl lg:text-2xl font-semibold">on professional camera drones</p>
+            <p class="text-xs sm:text-sm lg:text-md font-light">Limited quantities.<br>See product detail pages for availability.</p>
+            <button class="bg-[#6322FF] text-white border-2 border-[#6322FF] w-fit hover:bg-white hover:text-[#6322FF] px-6 sm:px-10 lg:px-[50px] py-2 sm:py-3 rounded-full font-light transition-all duration-300 text-sm sm:text-base">Shop</button>
+        </div>
+    </section>
+
+    <section class="border-[24px] sm:border-[48px] border-gray-100 bg-white p-6 sm:p-10">
+        <h1 class="flex justify-center text-2xl sm:text-3xl font-semibold">Brands</h1>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 mt-8 sm:mt-14 mx-4 sm:mx-10 lg:mx-20 gap-2">
+            <img src="/assets/brand1.avif" class="w-full h-20 sm:h-28 lg:h-[150px] object-cover border-[2px] border-gray-100">
+            <img src="/assets/brand2.avif" class="w-full h-20 sm:h-28 lg:h-[150px] object-cover border-[2px] border-gray-100">
+            <img src="/assets/brand3.avif" class="w-full h-20 sm:h-28 lg:h-[150px] object-cover border-[2px] border-gray-100">
+            <img src="/assets/brand4.avif" class="w-full h-20 sm:h-28 lg:h-[150px] object-cover border-[2px] border-gray-100">
+            <img src="/assets/brand5.avif" class="w-full h-20 sm:h-28 lg:h-[150px] object-cover border-[2px] border-gray-100 col-span-2 sm:col-span-1">
+        </div>
+    </section>
+
+    <section class="flex items-center flex-col border-[24px] sm:border-[48px] border-gray-100 bg-[#6322FF] p-6 sm:p-10 gap-3 sm:gap-4">
+        <h1 class="text-white text-2xl sm:text-3xl font-semibold">Newsletter</h1>
+        <p class="text-white font-light text-sm sm:text-base text-center">Sign up to receive updates on new arrivals and special offers</p>
+        <div class="w-full flex flex-col sm:flex-row items-start sm:items-end gap-2 sm:gap-0 max-w-xl">
+            <div class="w-full">
+                <p class="text-white font-light text-sm mb-1">Email *</p>
+                <div class="flex flex-col sm:flex-row gap-2 sm:gap-0">
+                    <input type="email" class="px-4 py-2 rounded-full sm:rounded-r-none sm:rounded-l-full border border-white w-full sm:flex-1 bg-transparent text-white">
+                    <button class="bg-black text-white w-full sm:w-36 px-5 py-2 rounded-full sm:rounded-l-none sm:rounded-r-full font-light hover:bg-transparent hover:text-white hover:border-2 border-white transition-all duration-300 text-sm sm:text-base">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <label class="flex items-center space-x-3 cursor-pointer mt-3 sm:mt-5 self-start sm:self-auto sm:mr-auto sm:ml-[calc(50%-250px)]">
+            <input type="checkbox" class="h-4 w-4 sm:h-5 sm:w-5">
+            <span class="text-white font-light text-sm sm:text-base">Yes, subscribe me to your newsletter. *</span>
+        </label>
+    </section>
+
+    <section class="relative overflow-hidden">
+        <img src="/assets/headphones_section.avif" class="w-full h-48 sm:h-72 lg:h-[400px] object-cover">
+        <div class="absolute inset-0 w-[75%] sm:w-[60%] lg:w-[40%] bg-black skew-x-[12deg] origin-bottom-left"></div>
+        <div class="absolute inset-0 z-10 flex flex-col justify-center gap-2 sm:gap-4 px-4 sm:px-8 lg:pl-[50px]">
+            <h1 class="text-base sm:text-xl lg:text-3xl font-semibold text-white w-full sm:w-2/5 lg:w-1/4">Need Help? Check Out Our Help Center</h1>
+            <p class="text-xs sm:text-sm lg:text-md font-light text-white w-full sm:w-2/5 lg:w-1/4">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+            <button class="bg-white text-[#6322FF] border-2 border-[#6322FF] w-fit hover:bg-[#6322FF] hover:text-white px-4 sm:px-8 lg:px-[50px] py-2 sm:py-3 rounded-full font-light transition-all duration-300 text-xs sm:text-sm lg:text-base">Go to Help Center</button>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-10 sm:py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">Store Location</h3>
+                <p class="mb-2 text-sm sm:text-base">500 Terry Francine Street</p>
+                <p class="mb-2 text-sm sm:text-base">San Francisco, CA 94158</p>
+                <p class="mb-2 text-sm sm:text-base">info@mysite.com</p>
+                <p class="mb-4 sm:mb-6 text-sm sm:text-base">123-456-7890</p>
+                <div class="flex gap-4 text-lg sm:text-xl">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">Shop</h3>
+                <div class="flex flex-col gap-3 text-gray-800 text-sm">
+                    <a href="/html/index_main.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Shop All</a>
+                    <a href="/html/computers.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Computers</a>
                     <a href="/html/tablets.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Tablets</a>
-                    <a href="/html/drones.html" class="text-grey-700 hover:text-purple-600 cursor-pointer">Drones&Cameras</a>
-                    <a href="/html/audio.html" class="text-gray-700 hover:text-purple-600 cursor-pointer"> Audio</a>
+                    <a href="/html/drones.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Drones & Cameras</a>
+                    <a href="/html/audio.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Audio</a>
                     <a href="/html/mobile.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Mobile</a>
                     <a href="/html/tv.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">T.V & Home Cinema</a>
                     <a href="/html/wearable.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Wearable Tech</a>
                     <a href="/html/sale.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Sale</a>
-            </div>
-        </div>
-    </div>
-        <div class="flex relative">
-            <div class="w-full">
-                <img class="h-[580px] w-full" src="/assets/bg-1-homepage.jpg" >
-            </div>
-            <div class="absolute mt-[80px] ml-[180px] text-2xl">
-                <div class="bg-red-500 w-40 px-5 text-white">
-                    <h3>Best Prices</h3>
-                </div>
-                <div class="font-semibold text-5xl w-96">
-                    <h1 class="leading-[1.2]">Incredible Prices on All Your Favorite Items</h1>
-                </div>
-                <div>Get more for less on selected brands</div>
-                <button class="bg-voilet-500 px-5 py-5 rounded-full text-white w-[150px] hover:bg-white hover:text-purple-700">Shop Now</button>
-            </div>
-        </div>
-        <div class="flex gap-[40px] p-[40px]">
-            <div class="relative flex">
-                <img class="h-[468px] w-[668px]" src="/assets/iphone.jpg">
-                <div class="absolute text-white w-[300px] ml-[70px] mt-[70px]">
-                    <h3 class="text-xl font-thin">Holiday Deals</h3>
-                    <h1 class="text-6xl mt-[10px]">Up to 30% off</h1>
-                    <h3 class="text-xl font-thin mt-[10px]">Selected Smartphone Brands </h3>
-                    <button class="bg-white font-thin rounded-3xl text-black w-[120px] h-[40px] mt-[20px]">Shop Now</button>
                 </div>
             </div>
-            <div class="relative flex">
-                <img class="h-[468px] w-[668px]" src="/assets/headphone.jpg">
-                <div class="absolute text-white w-[300px] ml-[70px] mt-[70px]">
-                    <h3 class="text-xl font-thin">Just In</h3>
-                    <h1 class="text-6xl mt-[10px]">Take Your Sound Anywhere</h1>
-                    <h3 class="text-xl font-thin mt-[10px]">Top Headphone Brands</h3>
-                    <button class="bg-white font-thin rounded-3xl text-black w-[120px] h-[40px] mt-[20px] ">Shop Now</button>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-evenly h-[200px] bg-white mx-[40px] py-[40px]">
-            <div class="flex gap-[30px] w-[260px]">
-                <i class="fa-solid fa-truck-pickup text-5xl"></i>
-                <h2 class="text-2xl">Curb-side pickup</h2>
-            </div>
-            <div class="flex gap-[30px] w-[260px]">
-                <i class="fa-solid fa-box-archive text-5xl"></i>
-                <h2 class="text-2xl">Free shipping on orders over $50</h2>
-            </div>
-            <div class="flex gap-[30px] w-[260px]">
-                <i class="fa-solid fa-money-bill-wave text-5xl"></i>
-                <h2 class="text-2xl">Low prices guaranteed</h2>
-            </div>
-            <div class="flex gap-[30px] w-[260px]">
-                <i class="fa-regular fa-clock text-5xl"></i>
-                <h2 class="text-2xl">Available to you 24/7 </h2>
-            </div>
-        </div>
-        <div class="bg-white mx-[40px] mt-[40px] px-[10px] flex flex-col items-center h-[700px] py-[40px]">
-            <h1 class="text-4xl font-semibold text-center mb-10">Best Sellers</h1>
-            <div class="flex h-[500px] gap-[20px] justify-center w-full">
-                <div class="border-black border-[1px] h-[450px]">
-                    <div class="mt-[15px] ml-[15px]">
-                        <h1 class="bg-red-600 rounded-full text-white w-[60px] h-[25px] flex items-center justify-center text-sm font-semibold">SALE</h1>
-                    </div>
-                    <img src="/assets/jp_gaming_laptop.jpg">
-                    <h1>JP Gaming Laptop 15.6" Laptop 256GB</h1>
-                    <h1>$85.00</h1>
-                </div>
-                <div class="border-black border-[1px] h-[450px]">
-                    <div class="mt-[15px] ml-[15px]">
-                        <h1 class="bg-red-600 rounded-full text-white w-[60px] h-[25px] flex items-center justify-center text-sm font-semibold">SALE</h1>
-                    </div>
-                    <img src="/assets/wireless_earbuds.jpg">
-                    <h1>In-ear Noise Cancelling & Isolating Wireless Earbuds</h1>
-                    <h1>$70.00</h1>
-                </div>
-                <div class="border-black border-[1px] h-[450px]">
-                    <div class="mt-[15px] ml-[15px]">
-                        <h1 class="bg-red-600 rounded-full text-white w-[60px] h-[25px] flex items-center justify-center text-sm font-semibold">SALE</h1>
-                    </div>
-                    <img src="/assets/tablet.jpg">
-                    <h1>JP - Space Tablet 10.4" Wi-Fi 32GB</h1>
-                    <h1>$70.00</h1>
-                </div>
-                <div class="border-black border-[1px] h-[450px]">
-                    <div class="mt-[15px] ml-[15px]">
-                        <h1 class="bg-red-600 rounded-full text-white w-[60px] h-[25px] flex items-center justify-center text-sm font-semibold">SALE</h1>
-                    </div>
-                    <img src="/assets/ocean_pro_11.jpg">
-                    <h1>Ocean Pro 11 - 12.3" Touch Screen</h1>
-                    <h1>$70.00</h1>
-                </div>
-            </div>
-            <button class="bg-violet-600 rounded-full w-[180px] h-[40px] ">VIEW ALL</button>
-        </div>
-        <div class="m-[40px] bg-white py-[40px]">
-            <div class="text-center mb-[60px]">
-                <h1 class="text-[32px] font-semibold">Shop by Category</h1>
-            </div>
-            <div class="grid grid-cols-5 gap-[40px] px-[100px] text-center">
-                <div>
-                    <div class="bg-gray-200 w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_laptop.jpg" class="w-[120px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">Computers</h1>
-                </div>
-                <div>
-                    <div class="bg-gray-200 w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_mobile.jpg" class="w-[100px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">Mobile</h1>
-                </div>
-                <div>
-                    <div class="bg-gray-200 w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_drone.jpg" class="w-[130px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">Drones & Cameras</h1>
-                </div>
-                <div>
-                    <div class="bg-gradient-to-r from-violet-600 to-purple-600 w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_sale.jpg" class="w-[80px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">Sale</h1>
-                </div>
-                <div>
-                    <div class="bg-gray-200 w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_tablet.jpg" class="w-[120px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">Tablets</h1>
-                </div>
-                <div>
-                    <div class="bg-black w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_best.jpg" class="w-[90px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">Best Sellers</h1>
-                </div>
-                <div>
-                    <div class="bg-gray-200 w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_tv.jpg" class="w-[130px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">T.V & Home Cinema</h1>
-                </div>
-                <div>
-                    <div class="bg-gray-200 w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_watch.jpg" class="w-[100px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">Wearable Tech</h1>
-                </div>
-                <div>
-                    <div class="bg-gray-200 w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_speaker.jpg" class="w-[100px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">Speakers</h1>
-                </div>
-                <div>
-                    <div class="bg-gray-200 w-[220px] h-[220px] rounded-full flex items-center justify-center mx-auto">
-                        <img src="/assets/sbc_headphones.jpg" class="w-[100px] object-contain">
-                    </div>
-                    <h1 class="mt-[20px] text-[18px] font-medium">Headphones</h1>
-                </div>
-            </div>
-        </div>
-        <div class="relative w-[1350px] h-[600px] bg-white flex overflow-hidden ml-[50px]">
-            <div class="relative w-1/2 h-full overflow-hidden">
-                <img src="/assets/background_all_ele.avif" class="w-full h-full object-cover">
-                <div class="absolute top-10 left-[65%] w-32 h-32 bg-red-600 rounded-full flex items-center justify-center shadow-lg z-20">
-                    <p class="text-white text-xl font-semibold rotate-[-15deg] text-center leading-tight">Best Price</p>
-                </div>
-            </div>
-            <div class="absolute left-[45%] top-0 w-[400px] h-full bg-white -skew-x-12 z-10"></div>
-            <div class="relative w-1/2 h-full flex flex-col justify-center pl-40 pr-20 z-20">
-              <h2 class="text-4xl font-medium text-gray-800 mb-6">Save up to</h2>
-                <h1 class="text-7xl font-bold text-black mb-6">$150</h1>
-                <div class="w-[420px]">
-                    <p class="text-2xl font-semibold text-gray-800 leading-snug mb-4">on selected laptop & tablets brands</p>
-                </div>
-                <p class="text-gray-500 mb-10">Terms and conditions apply</p>
-                <button class="w-44 py-3 rounded-full text-white text-lg font-medium  bg-gradient-to-r from-purple-600 to-indigo-500 hover:scale-105 transition">Shop</button>
-            </div>
-        </div>
-        <div class="py-10 bg-white mx-[40px] my-[40px] flex flex-col items-center">
-           <h2 class="text-2xl text-center mb-8">On Sale</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 max-w-6xl mx-auto">
-                <div class="bg-white border p-5 relative">
-                    <p class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">SALE</p>
-                    <img src="/assets/samrtwatchwithcahrger.avif" alt="" class="h-40 w-full bg-gray-200 mb-4">
-                    <p class="text-sm mb-2">Space Moon Smartwatch With Charger</p>
-                    <p class="text-purple-600">$70.00</p>
-                </div>
-                <div class="bg-white border p-5 relative">
-                    <p class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"> SALE</p>
-                    <img src="/assets/ovesamrtphone.avif" alt="" class="h-40 w-full bg-gray-200 mb-4">
-                    <p class="text-sm mb-2">OVE Light Space 5G, 128GB</p>
-                    <p class="text-purple-600">$70.00</p>
-                </div>
-                <div class="bg-white border p-5 relative">
-                    <p class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">SALE</p>
-                    <img src="/assets/pilateslaptop.avif" alt="" class="h-40 w-full bg-gray-200 mb-4">
-                    <p class="text-sm mb-2">Pilates 16" Touch Screen Laptop 24GB Memory</p>
-                    <p class="text-purple-600">$70.00</p>
-                </div>
-                <div class="bg-white border p-5 relative">
-                    <p class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">SALE</p>
-                    <img src="/assets/turn5speaker.avif" alt="" class="h-40 w-full bg-gray-200 mb-4">
-                    <p class="text-sm mb-2">Turn5 Portable Bluetooth Speaker</p>
-                    <p class="text-purple-600">$70.00</p>
-                </div>
-            </div>
-            <button class="bg-violet-600 rounded-full w-[180px] h-[40px] mt-[20px]">VIEW ALL</button>
-        </div>
-        <section class="relative border-[48px] border-gray-100 overflow-hidden">
-            <img src="/assets/drone.avif" class="w-full h-[600px] object-cover">
-            <div class="absolute inset-0 w-[40%] bg-white skew-x-[12deg] origin-bottom-left"></div>
-            <div class="absolute inset-0 z-10 flex flex-col justify-evenly my-[90px] pl-[100px]">
-                <p class="bg-red-600 w-fit text-white font-light px-2">Today's Special</p>
-                <h1 class="text-3xl font-semibold">Best Arial View in Town<h1>
-                <h1 class="text-7xl font-bold"><span class="text-[#6322FF]">30% </span>OFF</h1>
-                <p class="text-2xl font-semibold">on professional camera drones</p>
-                <p class="text-md font-light">Limited quantities.<br>See product detail pages for availability.</p>
-                <button class="bg-[#6322FF] text-white border-2 border-[#6322FF] w-1/5 hover:bg-white hover:text-[#6322FF] px-[50px] py-3 rounded-full font-light transition-all duration-300">Shop</button>
-            </div>
-        </section>
-        <section class="border-[48px] border-gray-100 bg-white p-10">
-            <h1 class="flex justify-center text-3xl font-semibold">Brands</h1>
-            <div class="grid grid-cols-5 mt-[60px] mx-[80px]">
-                <img src="/assets/brand1.avif" class="w-full h-[150px] object-cover border-[2px] border-gray-100">
-                <img src="/assets/brand2.avif" class="w-full h-[150px] object-cover border-[2px] border-gray-100">
-                <img src="/assets/brand3.avif" class="w-full h-[150px] object-cover border-[2px] border-gray-100">
-                <img src="/assets/brand4.avif" class="w-full h-[150px] object-cover border-[2px] border-gray-100">
-                <img src="/assets/brand5.avif" class="w-full h-[150px] object-cover border-[2px] border-gray-100">
-            </div>
-        </section>
-        <section class="flex items-center flex-col border-[48px] border-gray-100 bg-[#6322FF] p-10 gap-4">
-            <h1 class="text-white text-3xl font-semibold">Newsletter</h1>
-            <p class="text-white font-light">Sign up to receive updates on new arrivals and special offers</p>
             <div>
-                <p class="text-white font-light">Email *</p>
-                <input type="email" class="px-4 py-2 rounded-full border-[1px] border-white w-[500px] bg-transparent text-white required">
-                <button class="bg-black text-white w-[150px] px-5 py-2 rounded-full font-light hover:bg-transparent hover:text-white hover:border-2 border-white transition-all duration-300">Subscribe</button>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">Customer Support</h3>
+                <ul class="space-y-3 text-sm sm:text-base">
+                    <li>Contact Us</li>
+                    <li>Help Center</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                </ul>
             </div>
-            <label class="flex items-center space-x-3 cursor-pointer mt-5 pr-[340px]">
-                <input type="checkbox" class="h-5 w-5">
-                <span class="text-white font-light">Yes, subscribe me to your newsletter. *</span>
-            </label>
-        </section>
-        <section class="relative overflow-hidden">
-            <img src="/assets/headphones_section.avif" class="w-full h-[300px] md:h-[400px] object-cover">
-            <div class="absolute inset-0 w-[70%] md:w-[40%] bg-black skew-x-[12deg] origin-bottom-left"></div>
-            <div class="absolute inset-0 z-10 flex flex-col justify-center gap-4 px-6 md:pl-[50px]">
-                <h1 class="text-xl md:text-3xl font-semibold text-white w-full md:w-1/4">Need Help? Check Out Our Help Center</h1>
-                <p class="text-sm md:text-md font-light text-white w-full md:w-1/4">
-                    I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
-                </p>
-                <button class="bg-white text-[#6322FF] border-2 border-[#6322FF] w-fit md:w-1/5 hover:bg-[#6322FF] hover:text-white px-6 md:px-[50px] py-3 rounded-full font-light transition-all duration-300">Go to Help Center</button>
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">Policy</h3>
+                <ul class="space-y-3 text-sm sm:text-base">
+                    <li>Shipping & Returns</li>
+                    <li>Terms & Conditions</li>
+                    <li>Payment Methods</li>
+                    <li>FAQ</li>
+                </ul>
             </div>
-        </section>
-        <footer class="bg-white border-t border-gray-200">
-            <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Store Location</h3>
-                    <p class="mb-2">500 Terry Francine Street</p>
-                    <p class="mb-2">San Francisco, CA 94158</p>
-                    <p class="mb-2">info@mysite.com</p>
-                    <p class="mb-6">123-456-7890</p>
-                    <div class="flex gap-4 text-xl">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Shop</h3>
-                    <div class="flex gap-4 text-gray-800 text-sm flex-col">
-                        <a href="/html/index_main.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">shop All</a>
-                        <a href="/html/computers.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">computers</a>
-                        <a href="/html/tablets.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Tablets</a>
-                        <a href="/html/drones.html" class="text-grey-700 hover:text-purple-600 cursor-pointer">Drones&Cameras</a>
-                        <a href="/html/audio.html" class="text-gray-700 hover:text-purple-600 cursor-pointer"> Audio</a>
-                        <a href="/html/mobile.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Mobile</a>
-                        <a href="/html/tv.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">T.V & Home Cinema</a>
-                        <a href="/html/wearable.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Wearable Tech</a>
-                        <a href="/html/sale.html" class="text-gray-700 hover:text-purple-600 cursor-pointer">Sale</a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Customer Support</h3>
-                    <ul class="space-y-3">
-                        <li>Contact Us</li>
-                        <li>Help Center</li>
-                        <li>About Us</li>
-                        <li>Careers</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Policy</h3>
-                    <ul class="space-y-3">
-                        <li>Shipping & Returns</li>
-                        <li>Terms & Conditions</li>
-                        <li>Payment Methods</li>
-                        <li>FAQ</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-200 px-6 md:mx-[100px] py-10">
-                <p class="text-center mb-8 font-light text-sm">We accept the following paying methods</p>
-                <div class="flex flex-wrap justify-center items-center gap-6">
-                    <img src="/assets/visa.png" class="h-8">
-                    <img src="/assets/mastercard.avif" class="h-8">
-                    <img src="/assets/americanexpress.avif" class="h-8">
-                    <img src="/assets/unionpay.avif" class="h-8">
-                    <img src="/assets/jcb.avif" class="h-8">
-                    <img src="/assets/diners.avif" class="h-8">
-                    <img src="/assets/discovery.avif" class="h-8">
-                    <img src="/assets/paypal.avif" class="h-8">
-                </div>
-            </div>
-        </footer>
-        <footer class="bg-gray-100 py-4">
-            <p class="text-center text-md text-gray-600">© 2035 TechShed. Powered and secured by <span class="underline">Wix</span></p>
-        </footer>
-        <div class="fixed bottom-6 right-6 bg-red-600 px-5 py-4 cursor-pointer shadow-xl rounded-full">
-            <i class="fa-solid fa-message text-white text-2xl"></i>
         </div>
+        <div class="border-t border-gray-200 px-6 md:mx-[100px] py-8 sm:py-10">
+            <p class="text-center mb-6 sm:mb-8 font-light text-xs sm:text-sm">We accept the following paying methods</p>
+            <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+                <img src="/assets/visa.png" class="h-6 sm:h-8">
+                <img src="/assets/mastercard.avif" class="h-6 sm:h-8">
+                <img src="/assets/americanexpress.avif" class="h-6 sm:h-8">
+                <img src="/assets/unionpay.avif" class="h-6 sm:h-8">
+                <img src="/assets/jcb.avif" class="h-6 sm:h-8">
+                <img src="/assets/diners.avif" class="h-6 sm:h-8">
+                <img src="/assets/discovery.avif" class="h-6 sm:h-8">
+                <img src="/assets/paypal.avif" class="h-6 sm:h-8">
+            </div>
+        </div>
+    </footer>
+
+    <footer class="bg-gray-100 py-4">
+        <p class="text-center text-xs sm:text-md text-gray-600">© 2035 TechShed. Powered and secured by <span class="underline">Wix</span></p>
+    </footer>
+
+    <div class="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 bg-red-600 px-4 sm:px-5 py-3 sm:py-4 cursor-pointer shadow-xl rounded-full">
+        <i class="fa-solid fa-message text-white text-xl sm:text-2xl"></i>
     </div>
 </body>
 </html>
